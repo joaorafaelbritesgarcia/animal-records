@@ -22,6 +22,12 @@ export default function Home() {
             Animal Records
           </div>
           <div className="flex gap-4">
+            <a
+              href="/artists"
+              className="text-sm font-semibold text-foreground hover:text-primary transition-colors"
+            >
+              Artistas
+            </a>
             <button
               onClick={() => setShowForm(true)}
               className="text-sm font-semibold text-foreground hover:text-primary transition-colors"
@@ -201,6 +207,14 @@ export default function Home() {
             <div>
               <h4 className="text-lg font-bold font-montserrat mb-4">Links Rápidos</h4>
               <ul className="space-y-2 text-gray-300">
+                <li>
+                  <a
+                    href="/artists"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Artistas
+                  </a>
+                </li>
                 <li>
                   <button
                     onClick={() => setShowForm(true)}
