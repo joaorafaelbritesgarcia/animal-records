@@ -11,7 +11,7 @@ import Artists from "./pages/Artists";
 function Router() {
   return (
     <Switch>
-      <Route path={"="} component={Home} />
+      <Route path={"/"} component={Home} />
       <Route path={"/artists"} component={Artists} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
