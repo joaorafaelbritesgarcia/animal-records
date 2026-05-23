@@ -158,6 +158,107 @@ export default function Artists() {
         </div>
       </section>
 
+      {/* Lançamentos Recentes Section */}
+      <section className="py-24 bg-white">
+        <div className="container">
+          <h2 className="text-5xl font-black font-montserrat text-foreground mb-16 text-center">
+            Lançamentos Recentes
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Lady Safa Releases */}
+            <div className="animate-fade-in-up">
+              <h3 className="text-2xl font-bold font-montserrat text-foreground mb-8">
+                Lady Safa
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition-colors">
+                  <p className="text-sm text-gray-600 font-semibold mb-2">Single • 2026</p>
+                  <h4 className="text-lg font-bold font-montserrat text-foreground mb-2">
+                    Ana Júlia
+                  </h4>
+                  <p className="text-gray-700 text-sm mb-4">
+                    Novo lançamento de Lady Safa, disponível em todas as plataformas.
+                  </p>
+                  <a
+                    href="https://open.spotify.com/search/Lady%20Safa%20Ana%20J%C3%BAlia"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+                  >
+                    <Play size={16} />
+                    Ouvir no Spotify
+                  </a>
+                </div>
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition-colors">
+                  <p className="text-sm text-gray-600 font-semibold mb-2">Single • 2026</p>
+                  <h4 className="text-lg font-bold font-montserrat text-foreground mb-2">
+                    Siricou (feat. Passarilha)
+                  </h4>
+                  <p className="text-gray-700 text-sm mb-4">
+                    Colaboração especial entre Lady Safa e Passarilha, produzido pela Animal Records.
+                  </p>
+                  <a
+                    href="https://open.spotify.com/search/Siricou%20Lady%20Safa%20Passarilha"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+                  >
+                    <Play size={16} />
+                    Ouvir no Spotify
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Passarilha Releases */}
+            <div className="animate-fade-in-up" style={{ animationDelay: "100ms" }}>
+              <h3 className="text-2xl font-bold font-montserrat text-foreground mb-8">
+                Passarilha
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition-colors">
+                  <p className="text-sm text-gray-600 font-semibold mb-2">EP • 2026</p>
+                  <h4 className="text-lg font-bold font-montserrat text-foreground mb-2">
+                    7IMITE
+                  </h4>
+                  <p className="text-gray-700 text-sm mb-4">
+                    Novo EP de Passarilha com produções exclusivas e inovadoras.
+                  </p>
+                  <a
+                    href="https://open.spotify.com/search/Passarilha%207IMITE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+                  >
+                    <Play size={16} />
+                    Ouvir no Spotify
+                  </a>
+                </div>
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition-colors">
+                  <p className="text-sm text-gray-600 font-semibold mb-2">Single • 2026</p>
+                  <h4 className="text-lg font-bold font-montserrat text-foreground mb-2">
+                    Elas Chegaram (feat. Arita Blues)
+                  </h4>
+                  <p className="text-gray-700 text-sm mb-4">
+                    Colaboração de Passarilha com Arita Blues em um single envolvente.
+                  </p>
+                  <a
+                    href="https://open.spotify.com/search/Passarilha%20Elas%20Chegaram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+                  >
+                    <Play size={16} />
+                    Ouvir no Spotify
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Spotify Embeds Section */}
       <section className="py-24 bg-gray-50">
         <div className="container">
