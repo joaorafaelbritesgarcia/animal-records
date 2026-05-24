@@ -1,5 +1,5 @@
 import { Music, ExternalLink, Play } from "lucide-react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 
 /**
  * Design Philosophy: Modernismo Minimalista com Tipografia Ousada
@@ -9,6 +9,7 @@ import { Link } from "wouter";
  */
 
 export default function Artists() {
+  const [, setLocation] = useLocation();
   const artists = [
     {
       name: "Lady Safa",
@@ -50,22 +51,22 @@ export default function Artists() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div className="container flex items-center justify-between h-20">
-          <Link href="/" className="text-2xl font-black font-montserrat text-foreground">
+          <a href="/" className="text-2xl font-black font-montserrat text-foreground cursor-pointer">
             Animal Records
-          </Link>
+          </a>
           <div className="flex gap-4">
-            <Link
+            <a
               href="/"
-              className="text-sm font-semibold text-foreground hover:text-primary transition-colors"
+              className="text-sm font-semibold text-foreground hover:text-primary transition-colors cursor-pointer"
             >
               Início
-            </Link>
-            <Link
+            </a>
+            <a
               href="/artists"
-              className="text-sm font-semibold text-primary transition-colors"
+              className="text-sm font-semibold text-primary transition-colors cursor-pointer"
             >
               Artistas
-            </Link>
+            </a>
           </div>
         </div>
       </nav>
@@ -358,16 +359,16 @@ export default function Artists() {
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Se você é um artista talentoso e deseja fazer parte do nosso catálogo, entre em contato conosco!
           </p>
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 bg-primary text-white font-montserrat font-bold px-8 py-4 rounded-sm hover:scale-105 transition-all duration-200"
+          <button
+            onClick={() => setLocation("/")}
+            className="inline-flex items-center gap-2 bg-primary text-white font-montserrat font-bold px-8 py-4 rounded-sm hover:scale-105 transition-all duration-200 cursor-pointer border-0"
             style={{
               boxShadow: "0 0 20px rgba(0, 255, 136, 0.4)",
             }}
           >
             <Music size={20} />
             Voltar para Início
-          </Link>
+          </button>
         </div>
       </section>
 
@@ -389,17 +390,17 @@ export default function Artists() {
               </h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <Link href="/" className="hover:text-primary transition-colors">
+                  <a href="/" className="hover:text-primary transition-colors cursor-pointer">
                     Início
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="/artists"
-                    className="hover:text-primary transition-colors"
+                    className="hover:text-primary transition-colors cursor-pointer"
                   >
                     Artistas
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
