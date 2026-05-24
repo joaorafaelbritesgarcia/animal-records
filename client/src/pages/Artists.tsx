@@ -1,4 +1,5 @@
 import { Music, ExternalLink, Play } from "lucide-react";
+import { Link } from "wouter";
 
 /**
  * Design Philosophy: Modernismo Minimalista com Tipografia Ousada
@@ -31,6 +32,17 @@ export default function Artists() {
       image:
         "https://d2xsxph8kpxj0f.cloudfront.net/310519663684719473/eTbGvhP66rdsFzyY3omaBh/studio-aesthetic-mmwG7g28dE4vbyRi9ZKs7B.webp",
     },
+    {
+      name: "Lyo",
+      role: "Cantor & Artista",
+      description:
+        "Lyo é um artista versátil da Animal Records com um estilo único e provocador. Suas músicas exploram temas contemporâneos com autenticidade e criatividade.",
+      spotifyId: "5q8EUebVGOuYAyzV9M0Zuo",
+      spotifyEmbed:
+        "https://open.spotify.com/embed/artist/5q8EUebVGOuYAyzV9M0Zuo",
+      image:
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop",
+    },
   ];
 
   return (
@@ -38,22 +50,22 @@ export default function Artists() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div className="container flex items-center justify-between h-20">
-          <a href="/" className="text-2xl font-black font-montserrat text-foreground">
+          <Link href="/" className="text-2xl font-black font-montserrat text-foreground">
             Animal Records
-          </a>
+          </Link>
           <div className="flex gap-4">
-            <a
+            <Link
               href="/"
               className="text-sm font-semibold text-foreground hover:text-primary transition-colors"
             >
               Início
-            </a>
-            <a
+            </Link>
+            <Link
               href="/artists"
               className="text-sm font-semibold text-primary transition-colors"
             >
               Artistas
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -78,11 +90,10 @@ export default function Artists() {
       <section className="py-24 bg-white">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {artists.map((artist, index) => (
+            {artists.map((artist) => (
               <div
-                key={index}
+                key={artist.spotifyId}
                 className="group animate-fade-in-up"
-                style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Artist Card */}
                 <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-primary transition-all duration-300 hover:shadow-lg">
@@ -255,6 +266,51 @@ export default function Artists() {
                 </div>
               </div>
             </div>
+
+            {/* Lyo Releases */}
+            <div className="animate-fade-in-up" style={{ animationDelay: "200ms" }}>
+              <h3 className="text-2xl font-bold font-montserrat text-foreground mb-8">
+                Lyo
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition-colors">
+                  <p className="text-sm text-gray-600 font-semibold mb-2">Single • 2026</p>
+                  <h4 className="text-lg font-bold font-montserrat text-foreground mb-2">
+                    Offline
+                  </h4>
+                  <p className="text-gray-700 text-sm mb-4">
+                    Ótimo single de Lyo com produção de alta qualidade e letras impactantes.
+                  </p>
+                  <a
+                    href="https://open.spotify.com/search/Lyo%20Offline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+                  >
+                    <Play size={16} />
+                    Ouvir no Spotify
+                  </a>
+                </div>
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition-colors">
+                  <p className="text-sm text-gray-600 font-semibold mb-2">Single • 2026</p>
+                  <h4 className="text-lg font-bold font-montserrat text-foreground mb-2">
+                    Roes
+                  </h4>
+                  <p className="text-gray-700 text-sm mb-4">
+                    Novo lançamento de Lyo com som único e provocador, disponível em todas as plataformas.
+                  </p>
+                  <a
+                    href="https://open.spotify.com/search/Lyo%20Roes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+                  >
+                    <Play size={16} />
+                    Ouvir no Spotify
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -280,11 +336,11 @@ export default function Artists() {
                     src={`${artist.spotifyEmbed}?utm_source=generator`}
                     width="100%"
                     height="352"
-                    frameBorder="0"
                     allowFullScreen={true}
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"
-                    className="rounded-lg"
+                    className="rounded-lg border-0"
+                    style={{ border: 'none' }}
                   ></iframe>
                 </div>
               </div>
@@ -302,7 +358,7 @@ export default function Artists() {
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Se você é um artista talentoso e deseja fazer parte do nosso catálogo, entre em contato conosco!
           </p>
-          <a
+          <Link
             href="/"
             className="inline-flex items-center gap-2 bg-primary text-white font-montserrat font-bold px-8 py-4 rounded-sm hover:scale-105 transition-all duration-200"
             style={{
@@ -311,7 +367,7 @@ export default function Artists() {
           >
             <Music size={20} />
             Voltar para Início
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -333,17 +389,17 @@ export default function Artists() {
               </h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <a href="/" className="hover:text-primary transition-colors">
+                  <Link href="/" className="hover:text-primary transition-colors">
                     Início
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/artists"
                     className="hover:text-primary transition-colors"
                   >
                     Artistas
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

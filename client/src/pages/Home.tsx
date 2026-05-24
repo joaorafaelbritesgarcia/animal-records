@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Music, Headphones } from "lucide-react";
 import { useState } from "react";
+import { Link } from "wouter";
 
 /**
  * Design Philosophy: Modernismo Minimalista com Tipografia Ousada
@@ -22,12 +23,12 @@ export default function Home() {
             Animal Records
           </div>
           <div className="flex gap-4">
-            <a
+            <Link
               href="/artists"
               className="text-sm font-semibold text-foreground hover:text-primary transition-colors"
             >
               Artistas
-            </a>
+            </Link>
             <button
               onClick={() => setShowForm(true)}
               className="text-sm font-semibold text-foreground hover:text-primary transition-colors"
@@ -208,12 +209,12 @@ export default function Home() {
               <h4 className="text-lg font-bold font-montserrat mb-4">Links Rápidos</h4>
               <ul className="space-y-2 text-gray-300">
                 <li>
-                  <a
+                  <Link
                     href="/artists"
                     className="hover:text-primary transition-colors"
                   >
                     Artistas
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <button
