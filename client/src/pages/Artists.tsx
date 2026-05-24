@@ -37,9 +37,9 @@ export default function Artists() {
       role: "Cantor & Artista",
       description:
         "Lyo é um artista versátil da Animal Records com um estilo único e provocador. Suas músicas exploram temas contemporâneos com autenticidade e criatividade.",
-      spotifyId: "5q8EUebVGOuYAyzV9M0Zuo",
+      spotifyId: "6jlvVrfz3TKFPkHC66eyBm",
       spotifyEmbed:
-        "https://open.spotify.com/embed/artist/5q8EUebVGOuYAyzV9M0Zuo",
+        "https://open.spotify.com/embed/artist/6jlvVrfz3TKFPkHC66eyBm",
       image:
         "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop",
     },
