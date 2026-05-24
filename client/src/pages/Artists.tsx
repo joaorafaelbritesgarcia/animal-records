@@ -268,50 +268,7 @@ export default function Artists() {
               </div>
             </div>
 
-            {/* Lyo Releases */}
-            <div className="animate-fade-in-up" style={{ animationDelay: "200ms" }}>
-              <h3 className="text-2xl font-bold font-montserrat text-foreground mb-8">
-                Lyo
-              </h3>
-              <div className="space-y-4">
-                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition-colors">
-                  <p className="text-sm text-gray-600 font-semibold mb-2">Single • 2026</p>
-                  <h4 className="text-lg font-bold font-montserrat text-foreground mb-2">
-                    Offline
-                  </h4>
-                  <p className="text-gray-700 text-sm mb-4">
-                    Ótimo single de Lyo com produção de alta qualidade e letras impactantes.
-                  </p>
-                  <a
-                    href="https://open.spotify.com/search/Lyo%20Offline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
-                  >
-                    <Play size={16} />
-                    Ouvir no Spotify
-                  </a>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition-colors">
-                  <p className="text-sm text-gray-600 font-semibold mb-2">Single • 2026</p>
-                  <h4 className="text-lg font-bold font-montserrat text-foreground mb-2">
-                    Roes
-                  </h4>
-                  <p className="text-gray-700 text-sm mb-4">
-                    Novo lançamento de Lyo com som único e provocador, disponível em todas as plataformas.
-                  </p>
-                  <a
-                    href="https://open.spotify.com/search/Lyo%20Roes"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
-                  >
-                    <Play size={16} />
-                    Ouvir no Spotify
-                  </a>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
