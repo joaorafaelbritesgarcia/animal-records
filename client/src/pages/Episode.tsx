@@ -94,7 +94,7 @@ export default function Episode() {
                 controlsList="nodownload"
                 poster="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=1200&h=675&fit=crop"
               >
-                <source src="" type="video/mp4" />
+                <source src="/manus-storage/lv_0_20260524182542_clean_50109c39.mp4" type="video/mp4" />
                 Seu navegador não suporta o elemento de vídeo.
               </video>
             </div>
