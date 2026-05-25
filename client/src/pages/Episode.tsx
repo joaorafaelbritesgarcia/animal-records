@@ -57,13 +57,13 @@ export default function Episode() {
               🎬 NOVO EPISÓDIO
             </div>
             <h1 className="text-7xl lg:text-8xl font-black font-montserrat text-foreground mb-6">
-              Miraculous
+              Miraculous Floptok
             </h1>
             <h2 className="text-4xl lg:text-5xl font-bold font-montserrat text-primary mb-6">
-              Floptok - Episódio Cancelado
+              A Cancelada
             </h2>
             <p className="text-2xl text-gray-700 max-w-3xl mx-auto mb-8">
-              O episódio tão esperado já está disponível! Assista agora e descubra o que acontece nesta aventura épica.
+              Assista ao novo episódio de Miraculous Floptok! Descubra o que acontece nesta aventura épica.
             </p>
             <button
               onClick={() => {

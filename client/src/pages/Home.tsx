@@ -175,10 +175,10 @@ export default function Home() {
               NOVO CONTEUDO
             </div>
             <h2 className="text-5xl lg:text-6xl font-black font-montserrat text-foreground mb-6">
-              Miraculous: Floptok
+              Miraculous Floptok - A Cancelada
             </h2>
             <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-              Assista ao episodio cancelado de Miraculous agora disponivel exclusivamente no site da Animal Records.
+              Assista ao novo episodio de Miraculous Floptok exclusivamente no site da Animal Records.
             </p>
             <a
               href="/episode"
