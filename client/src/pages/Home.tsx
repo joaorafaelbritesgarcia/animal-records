@@ -162,6 +162,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Miraculous Episode Section */}
+      <section className="py-24 bg-gradient-to-r from-primary/20 to-primary/10 relative overflow-hidden">
+        <div className="absolute inset-0 -z-10 opacity-10">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary rounded-full blur-3xl" />
+        </div>
+
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-block bg-primary text-white px-6 py-2 rounded-full mb-6 font-bold text-sm">
+              NOVO CONTEUDO
+            </div>
+            <h2 className="text-5xl lg:text-6xl font-black font-montserrat text-foreground mb-6">
+              Miraculous: Floptok
+            </h2>
+            <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+              Assista ao episodio cancelado de Miraculous agora disponivel exclusivamente no site da Animal Records.
+            </p>
+            <a
+              href="/episode"
+              className="inline-flex items-center gap-3 bg-primary text-white font-montserrat font-bold px-10 py-5 rounded-sm hover:scale-105 transition-all duration-200 border-0 text-lg"
+              style={{
+                boxShadow: "0 0 30px rgba(0, 255, 136, 0.5)",
+              }}
+            >
+              <span>Play</span>
+              Assistir Episodio
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Embedded Google Form Modal */}
       {showForm && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
