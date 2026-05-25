@@ -94,7 +94,7 @@ export default function Episode() {
                 controlsList="nodownload"
                 poster="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=1200&h=675&fit=crop"
               >
-                <source src="/manus-storage/lv_0_20260524182542_clean_50109c39.mp4" type="video/mp4" />
+                <source src="/manus-storage/lv_0_20260524182542_final_fe3dea62.mp4" type="video/mp4" />
                 Seu navegador não suporta o elemento de vídeo.
               </video>
             </div>
@@ -102,16 +102,16 @@ export default function Episode() {
             {/* Video Info */}
             <div className="p-8">
               <h3 className="text-3xl font-bold font-montserrat text-foreground mb-4">
-                Miraculous: Floptok - Episódio Cancelado
+                Miraculous Floptok - A Cancelada
               </h3>
               <p className="text-gray-700 text-lg mb-6">
-                Assista ao episódio exclusivo de Miraculous que foi cancelado. Uma produção especial da Animal Records com qualidade cinematográfica.
+                Assista ao novo episódio de Miraculous Floptok. Uma produção especial da Animal Records com qualidade cinematográfica.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <p className="text-sm text-gray-600 font-semibold">Duração</p>
-                  <p className="text-lg font-bold text-foreground">45 min</p>
+                  <p className="text-lg font-bold text-foreground">3:52</p>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <p className="text-sm text-gray-600 font-semibold">Qualidade</p>
@@ -125,6 +125,61 @@ export default function Episode() {
                   <p className="text-sm text-gray-600 font-semibold">Estúdio</p>
                   <p className="text-lg font-bold text-foreground">Animal Records</p>
                 </div>
+              </div>
+
+              {/* Elenco Section */}
+              <div className="mb-8 border-t pt-8">
+                <h4 className="text-2xl font-bold font-montserrat text-foreground mb-6">Elenco</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                    <span className="text-primary font-bold">•</span>
+                    <div>
+                      <p className="font-semibold text-foreground">Lady Safa</p>
+                      <p className="text-sm text-gray-600">Diva Bug</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                    <span className="text-primary font-bold">•</span>
+                    <div>
+                      <p className="font-semibold text-foreground">Bovina</p>
+                      <p className="text-sm text-gray-600">Rena Flop</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                    <span className="text-primary font-bold">•</span>
+                    <div>
+                      <p className="font-semibold text-foreground">Lyo</p>
+                      <p className="text-sm text-gray-600">Cat Black</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                    <span className="text-primary font-bold">•</span>
+                    <div>
+                      <p className="font-semibold text-foreground">Axolara</p>
+                      <p className="text-sm text-gray-600">Tiger Flop</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                    <span className="text-primary font-bold">•</span>
+                    <div>
+                      <p className="font-semibold text-foreground">Pyrogato</p>
+                      <p className="text-sm text-gray-600">Turtle Protector</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                    <span className="text-primary font-bold">•</span>
+                    <div>
+                      <p className="font-semibold text-foreground">Passarilha</p>
+                      <p className="text-sm text-gray-600">Butter Flop</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Copyright */}
+              <div className="text-sm text-gray-600 border-t pt-6">
+                <p className="mb-2">© 2026 Animal Records. Todos os direitos reservados.</p>
+                <p>℗ 2026 Animal Records.</p>
               </div>
 
               <button
